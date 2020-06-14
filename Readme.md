@@ -11,7 +11,7 @@ Through this Generic API, basic parameters of API like URL, Payload, response, c
 The method that is being exposed in this package is `invoke()`. This particular method will return an object or any specific type (ex string, bool) based on the configuration. The inputs for the API are given below
 	
 - Module (string) - Module name or type.
-- Condition (string) - Condition of the rules.
+- Condition (string) - Condition of the name.
 - Attributes (object) - Required for substitution.
 
 ### API Configuration 
