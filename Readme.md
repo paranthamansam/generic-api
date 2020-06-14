@@ -22,11 +22,11 @@ Below is configuration used for poc:
 [
   {
     "module": "documents",
-    "url": "https://ksydbcpmq7.execute-api.eu-west-2.amazonaws.com/api/documents",
+    "url": "https://sample.com",
     "queries": [
       {
-        "condition": "checkPatientMatch",
-        "uri": "patientMatch",
+        "condition": "nameCheck",
+        "uri": "name-check",
         "requiredAttributes": [
           "name"
         ],
@@ -44,10 +44,10 @@ Below is configuration used for poc:
   },
   {
     "module": "clint",
-    "url": "https://ksydbcpmq7.execute-api.eu-west-2.amazonaws.com/api/clint",
+    "url": "https://sample1.com",
     "queries": [
       {
-        "condition": "queryName/Ern",
+        "condition": "personId",
         "uri": "execute",
         "requiredAttributes": [
           "queryErn"
