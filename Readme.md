@@ -50,12 +50,12 @@ Below is configuration used for poc:
         "condition": "personId",
         "uri": "execute",
         "requiredAttributes": [
-          "queryErn"
+          "personId"
         ],
         "methodType": "post",
         "contentType": "application/json",
         "requestBody": {
-          "queryErn": "$queryErn"
+          "personId": "$personId"
         },
         "response": {
           "code": 200,
