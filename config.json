@@ -1,0 +1,46 @@
+[
+  {
+    "module": "documents",
+    "url": "https://ksydbcpmq7.execute-api.eu-west-2.amazonaws.com/api/documents",
+    "queries": [
+      {
+        "condition": "checkPatientMatch",
+        "uri": "patientMatch",
+        "requiredAttributes": [
+          "name"
+        ],
+        "methodType": "post",
+        "contentType": "application/json",
+        "requestBody": {
+          "name": "$name"
+        },
+        "response": {
+          "code": 200,
+          "jsonPath": "result"
+        }
+      }
+    ]
+  },
+  {
+    "module": "clint",
+    "url": "https://ksydbcpmq7.execute-api.eu-west-2.amazonaws.com/api/clint",
+    "queries": [
+      {
+        "condition": "queryName/Ern",
+        "uri": "execute",
+        "requiredAttributes": [
+          "queryErn"
+        ],
+        "methodType": "post",
+        "contentType": "application/json",
+        "requestBody": {
+          "queryErn": "$queryErn"
+        },
+        "response": {
+          "code": 200,
+          "jsonPath": "result"
+        }
+      }
+    ]
+  }
+]
