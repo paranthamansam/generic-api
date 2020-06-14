@@ -21,7 +21,7 @@ Below is configuration used for poc:
 ```SH
 [
   {
-    "module": "documents",
+    "module": "person",
     "url": "https://sample.com",
     "queries": [
       {
@@ -43,7 +43,7 @@ Below is configuration used for poc:
     ]
   },
   {
-    "module": "clint",
+    "module": "people",
     "url": "https://sample1.com",
     "queries": [
       {
